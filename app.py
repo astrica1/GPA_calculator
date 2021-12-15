@@ -25,7 +25,6 @@ def GPANormalizer(scores_list):
 def AverageCalculator(scores_list, units_list):
     scores_sum = 0.0
     units_sum = 0
-    
     for i in range(len(scores_list)):
         scores_sum += scores_list[i] * units_list[i]
         units_sum += units_list[i]
@@ -35,8 +34,7 @@ def AverageCalculator(scores_list, units_list):
 def main():
     scores_list = ["N/A"]
     units_list = ["N/A"]
-    flag = True
-    while(flag):
+    while(True):
         ClearConsole()
         print("Last Score:\t" + str(scores_list[-1]))
         print("Last Unit:\t" + str(units_list[-1]))
